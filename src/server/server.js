@@ -31,7 +31,6 @@ MongoClient.connect(uri, {useNewUrlParser:true}, (err, client) => {
     app.post('/setUrl', (req, res) => {
         db.collection('url-db').save(req.body,(err,result)=>{
             if(err)return console.log(err);
-            console.log('saved to db');
         });
     });
 
