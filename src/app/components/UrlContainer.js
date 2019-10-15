@@ -43,7 +43,7 @@ class UrlContainer extends Component{
         let currentProxiedUrl = `http://localhost:8080/new/${uniqueValue}`;
         let currentNewUrl = `http://localhost:8080/${uniqueValue}`;
         this.setState({currentNewUrl:currentProxiedUrl});
-        const urlMapping = {id: uniqueValue, realUrl: input, newUrl: currentNewUrl};
+        const urlMapping = {id: uniqueValue, realUrl: input, newUrl: currentProxiedUrl};
         storeUrlMappings(urlMapping);
     }
 
