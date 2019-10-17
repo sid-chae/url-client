@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3c56df9-7eea-4589-bc81-0ec08da7736e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-    </list>
+    <list default="true" id="f3c56df9-7eea-4589-bc81-0ec08da7736e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/dist/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +67,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/webpack.config.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="44">
@@ -78,7 +76,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/dist/index.html">
               <provider selected="true" editor-type-id="text-editor" />
             </entry>
@@ -328,16 +326,15 @@
       <option name="presentableId" value="Default" />
       <updated>1570706086150</updated>
       <workItem from="1570706087585" duration="11358000" />
-      <workItem from="1571052196599" duration="20731000" />
+      <workItem from="1571052196599" duration="21217000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32089000" />
+    <option name="totallyTimeSpent" value="32575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="840" y="23" width="840" height="949" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27944863" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -568,9 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -584,6 +578,9 @@
           <caret line="3" column="45" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="45" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
