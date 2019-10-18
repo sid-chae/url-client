@@ -28,9 +28,9 @@ export class Main extends Component{
         let splitUrl = url.split('new');
         let id = splitUrl[1].replace('/','');
         let realUrl = await getUrlMappings(id);
-        this.setState({url:realUrl.replace('www.','//' )})
-        return realUrl.replace('www.','//' );
-        //find atl case
+        this.setState({url:realUrl.replace('https://www.','//' )})
+        return realUrl.replace('https://www.','//' );
+        //find atl case http
     }
 
     render(){
