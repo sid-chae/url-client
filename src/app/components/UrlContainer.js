@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import  InputField  from './InputField';
 import {storeUrlMappings,checkForExistingUrl,checkForExistingId } from '../services';
 
-const api='https://s95.herokuapp.com';
+export const api='https://s95.herokuapp.com';
 class UrlContainer extends Component{
     constructor(props){
         super(props);

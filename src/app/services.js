@@ -1,10 +1,9 @@
 import axios from 'axios';
+import {api} from "./components/UrlContainer";
 
 export const storeUrlMappings = async urlMapping => {
-    console.log('here'
-    )
     try {
-        const res = await axios.post(`http://localhost:3000/setUrl/`,
+        const res = await axios.post(`${api}/setUrl/`,
             {
                 id: urlMapping.id,
                 realUrl: urlMapping.realUrl,
@@ -22,14 +21,14 @@ export const storeUrlMappings = async urlMapping => {
 export const getUrlMappings = async(id)=>{
     console.log(id);
 
-    const res= await axios.get( `http://localhost:3000/getUrl/${id}`,
+    const res= await axios.get( `${api}/getUrl/${id}`,
         {headers: {'Content-Type': 'application/x-www-form-urlencoded'}});
     return res.data[0].realUrl;
 }
 
 export const checkForExistingUrl = async realUrl => {
     try {
-        const res = await axios.post(`http://localhost:3000/checkUrl/`,
+        const res = await axios.post(`${api}/checkUrl/`,
             {
                 realUrl: realUrl,
             },
@@ -43,7 +42,7 @@ export const checkForExistingUrl = async realUrl => {
 
 export const checkForExistingId = async id => {
     try {
-        const res = await axios.post(`http://localhost:3000/checkId/`,
+        const res = await axios.post(`${api}/checkId/`,
             id,
         );
         return res.data;
