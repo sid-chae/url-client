@@ -41,7 +41,7 @@ class UrlContainer extends Component{
             if(!res.length)
                 idExists=false;
         }
-        let currentProxiedUrl = `${api}/new/${uniqueValue}`;
+        let currentProxiedUrl = `https://sc95.herokuapp.com/new/${uniqueValue}`;
         this.setState({currentNewUrl:currentProxiedUrl});
         const urlMapping = {id: uniqueValue, realUrl: input, newUrl: currentProxiedUrl};
         storeUrlMappings(urlMapping);
