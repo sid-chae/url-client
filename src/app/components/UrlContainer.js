@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import  InputField  from './InputField';
 import {storeUrlMappings,checkForExistingUrl,checkForExistingId } from '../services';
 
+const api='https://s95.herokuapp.com';
 class UrlContainer extends Component{
     constructor(props){
         super(props);
@@ -40,8 +41,7 @@ class UrlContainer extends Component{
             if(!res.length)
                 idExists=false;
         }
-        let currentProxiedUrl = `http://localhost:8080/new/${uniqueValue}`;
-        let currentNewUrl = `http://localhost:8080/${uniqueValue}`;
+        let currentProxiedUrl = `${api}/new/${uniqueValue}`;
         this.setState({currentNewUrl:currentProxiedUrl});
         const urlMapping = {id: uniqueValue, realUrl: input, newUrl: currentProxiedUrl};
         storeUrlMappings(urlMapping);

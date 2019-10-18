@@ -30,6 +30,7 @@ export class Main extends Component{
         let realUrl = await getUrlMappings(id);
         this.setState({url:realUrl.replace('www.','//' )})
         return realUrl.replace('www.','//' );
+        //find atl case
     }
 
     render(){
