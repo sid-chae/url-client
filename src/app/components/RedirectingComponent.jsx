@@ -16,12 +16,13 @@ class RedirectingComponent extends Component{
     }
 
     shouldComponentUpdate(nextState,nextProps){
-        return this.props.location!==nextProps.location || this.state.redirect!==nextState.url;
+        return this.props.location!==nextProps.location || this.state.redirect!==nextState.redirect || this.state.url!==nextState.url;
     }
 
     render(){
         if(this.state.redirect){
             this.props.hideSite(true);
+            console.log(this.state.url)
             window.location.href=this.state.url;
         }
         return(
